@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var path = require('path');
+var makeGPSGlyph = require(path.join(__dirname, '../lib/make-gps-glyph.js'));
+
+makeGPSGlyph();
