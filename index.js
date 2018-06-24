@@ -10,7 +10,7 @@ var mymap = L.map('map', {
 L.control.scale().addTo(mymap)
 
 // tile layer
-const mapboxAccessToken = 'pk.eyJ1IjoieW5ha2FqaW1hIiwiYSI6ImNqZDAyYnY5ejFzNWIycm5zbnh5aWpwcnUifQ.PkQ9QPlIicftFC9tcMNLWw'
+const mapboxAccessToken = 'pk.eyJ1IjoieW5ha2FqaW1hIiwiYSI6ImNqaXN1ajM0djF1eHgza3BtN21icDczaW4ifQ.upCab-6A__zRBega4faaBA'
 const mapbox = L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?access_token=${mapboxAccessToken}`, {
   minZoom: 12,
   attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
