@@ -36,39 +36,65 @@ const overlays = {
 }
 L.control.layers(baseLayers, overlays).addTo(mymap)
 
+// path
+const path = L.polyline([], {color: '#000', weight: 1}).addTo(mymap)
+path.interactive = false
+
+// load GeoJSON
 async function laodGeoJSON (url) {
   const res = await fetch(url)
   const geoJSON = await res.json()
   console.log(geoJSON)
-  geoJSON.features
-    .forEach((feature, index) => {
-      const coordTimes = feature.properties.coordTimes
-      const start = new Date(coordTimes[0])
-      const end = new Date(coordTimes[coordTimes.length - 1])
-      let distance = 0
-      feature.geometry.coordinates
-        .forEach((current, index) => {
-          if (index === 0) {
-            return
-          }
-          const prev = feature.geometry.coordinates[index - 1]
-          distance += geolib.getDistance(
-            {latitude: current[1], longitude: current[0]},
-            {latitude: prev[1], longitude: prev[0]}
-          )
-        })
-      const geoJSONLayer = L.geoJSON(
-        feature,
-        {
-          style: () => ({
-            color: colors[index % colors.length],
-            opacity: 0.7,
-            weight: 2.5
+  const geoJSONLayer = L.geoJSON(
+    geoJSON,
+    {
+      style: () => ({
+        opacity: 0.7,
+        weight: 3
+      }),
+      onEachFeature: (feature, layer) => {
+        const coordTimes = feature.properties.coordTimes
+        const start = new Date(coordTimes[0])
+        const end = new Date(coordTimes[coordTimes.length - 1])
+        const min = Math.round((end.getTime() - start.getTime()) / 1000 / 60)
+        let distance = 0
+        feature.geometry.coordinates
+          .forEach((current, index) => {
+            if (index === 0) {
+              return
+            }
+            const prev = feature.geometry.coordinates[index - 1]
+            distance += geolib.getDistance(
+              {latitude: current[1], longitude: current[0]},
+              {latitude: prev[1], longitude: prev[0]}
+            )
           })
-        }
-      )
-        .bindTooltip(() => `${feature.properties.name} (${distance / 1000}km)<br>${start.toLocaleString()} ~ ${end.toLocaleString()}`)
-      GPSLayer.addLayer(geoJSONLayer)
-    })
+        layer.setStyle({
+          color: colors[Math.floor(Math.random() * colors.length)]
+        })
+        layer.bindTooltip(() => `${feature.properties.name}<br>${distance / 1000}km<br>${start.toLocaleString()} ~ ${end.toLocaleString()}<br>${min}min`)
+        layer.on('mouseover', (e) => {
+          path
+            .setLatLngs(layer.getLatLngs())
+            .bringToFront()
+          layer
+            .setStyle({
+              weight: 8,
+              opacity: 0.5
+            })
+            .bringToFront()
+        })
+        layer.on('mouseout', (e) => {
+          layer.setStyle({
+            weight: 3,
+            opacity: 0.7
+          })
+          path
+            .setLatLngs([])
+        })
+      }
+    }
+  )
+  GPSLayer.addLayer(geoJSONLayer)
 }
 laodGeoJSON('gpslog.geojson')
