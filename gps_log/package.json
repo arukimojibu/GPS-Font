@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "mkdir -p dist && node scripts/togeojson.js > dist/gpslog.geojson"
+  },
+  "devDependencies": {
+    "@mapbox/togeojson": "^0.16.0",
+    "togeojson": "^0.16.0",
+    "xmldom": "^0.1.27"
+  }
+}
