@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="GPS Track Recorder" xmlns="http://www.topografix.com/GPX/1/1" xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/1 http://www.topografix.com/GPX/Private/TopoGrafix/0/1/topografix.xsd">
+<metadata>
+<name><![CDATA[Track_18]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+</metadata>
+<trk>
+<name><![CDATA[Track_18]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+<type><![CDATA[]]></type>
+<trkseg>
+<trkpt lat="35.739227" lon="139.661245"><ele>71.0</ele><time>2018-04-21T04:20:28.170Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.739137" lon="139.661208"><ele>68.0</ele><time>2018-04-21T04:20:39.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.739047" lon="139.661204"><ele>71.0</ele><time>2018-04-21T04:20:47.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738957" lon="139.661239"><ele>75.0</ele><time>2018-04-21T04:20:54.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738862" lon="139.661234"><ele>75.0</ele><time>2018-04-21T04:21:03.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738784" lon="139.661296"><ele>72.0</ele><time>2018-04-21T04:21:16.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738685" lon="139.661342"><ele>71.0</ele><time>2018-04-21T04:21:23.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738591" lon="139.661349"><ele>73.0</ele><time>2018-04-21T04:21:28.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738498" lon="139.661336"><ele>73.0</ele><time>2018-04-21T04:21:37.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738408" lon="139.661317"><ele>78.0</ele><time>2018-04-21T04:21:46.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738319" lon="139.661294"><ele>83.0</ele><time>2018-04-21T04:21:55.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738221" lon="139.661267"><ele>83.0</ele><time>2018-04-21T04:22:01.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.73819" lon="139.661373"><ele>77.0</ele><time>2018-04-21T04:22:12.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.73809" lon="139.661389"><ele>75.0</ele><time>2018-04-21T04:22:34.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.738013" lon="139.661327"><ele>73.0</ele><time>2018-04-21T04:22:44.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737941" lon="139.661254"><ele>73.0</ele><time>2018-04-21T04:22:53.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737874" lon="139.661175"><ele>80.0</ele><time>2018-04-21T04:23:01.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737806" lon="139.661096"><ele>83.0</ele><time>2018-04-21T04:23:08.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737753" lon="139.660989"><ele>90.0</ele><time>2018-04-21T04:23:16.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737662" lon="139.660937"><ele>96.0</ele><time>2018-04-21T04:23:25.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737566" lon="139.660937"><ele>86.0</ele><time>2018-04-21T04:23:34.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737477" lon="139.660915"><ele>81.0</ele><time>2018-04-21T04:23:47.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737397" lon="139.660861"><ele>87.0</ele><time>2018-04-21T04:23:54.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737323" lon="139.660797"><ele>87.0</ele><time>2018-04-21T04:24:02.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737235" lon="139.660737"><ele>86.0</ele><time>2018-04-21T04:24:13.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737155" lon="139.660682"><ele>77.0</ele><time>2018-04-21T04:24:22.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737091" lon="139.660601"><ele>76.0</ele><time>2018-04-21T04:24:30.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.737007" lon="139.660548"><ele>71.0</ele><time>2018-04-21T04:24:38.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.736943" lon="139.660463"><ele>71.0</ele><time>2018-04-21T04:24:46.000Z</time><cmt>gps</cmt></trkpt>
+</trkseg>
+</trk>
+</gpx>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="GPS Track Recorder" xmlns="http://www.topografix.com/GPX/1/1" xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/1 http://www.topografix.com/GPX/Private/TopoGrafix/0/1/topografix.xsd">
+<metadata>
+<name><![CDATA[Track_17]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+</metadata>
+<trk>
+<name><![CDATA[Track_17]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+<type><![CDATA[]]></type>
+<trkseg>
+<trkpt lat="35.552085" lon="139.722533"><ele>49.0</ele><time>2018-02-17T06:49:43.501Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552183" lon="139.722555"><ele>45.0</ele><time>2018-02-17T06:49:55.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552288" lon="139.722551"><ele>45.0</ele><time>2018-02-17T06:50:06.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.55238" lon="139.722526"><ele>41.0</ele><time>2018-02-17T06:50:23.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552475" lon="139.722525"><ele>41.0</ele><time>2018-02-17T06:50:30.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552574" lon="139.722527"><ele>44.0</ele><time>2018-02-17T06:50:37.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552676" lon="139.722513"><ele>51.0</ele><time>2018-02-17T06:50:46.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552764" lon="139.722476"><ele>51.0</ele><time>2018-02-17T06:50:56.000Z</time><cmt>gps</cmt></trkpt>
+</trkseg>
+</trk>
+</gpx>

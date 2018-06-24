@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="GPS Track Recorder" xmlns="http://www.topografix.com/GPX/1/1" xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/1 http://www.topografix.com/GPX/Private/TopoGrafix/0/1/topografix.xsd">
+<metadata>
+<name><![CDATA[Track_8]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+</metadata>
+<trk>
+<name><![CDATA[Track_8]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+<type><![CDATA[]]></type>
+<trkseg>
+<trkpt lat="35.657873" lon="139.703632"><ele>43.0</ele><time>2017-12-02T04:19:08.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657844" lon="139.703753"><ele>42.0</ele><time>2017-12-02T04:19:17.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.65784" lon="139.703868"><ele>47.0</ele><time>2017-12-02T04:19:25.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657875" lon="139.703972"><ele>50.0</ele><time>2017-12-02T04:19:33.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657921" lon="139.704069"><ele>54.0</ele><time>2017-12-02T04:19:39.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657951" lon="139.704181"><ele>54.0</ele><time>2017-12-02T04:19:48.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.658011" lon="139.704265"><ele>54.0</ele><time>2017-12-02T04:19:54.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.658035" lon="139.704376"><ele>55.0</ele><time>2017-12-02T04:20:02.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657985" lon="139.704471"><ele>51.0</ele><time>2017-12-02T04:20:10.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657982" lon="139.704589"><ele>50.0</ele><time>2017-12-02T04:20:19.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.658" lon="139.704703"><ele>51.0</ele><time>2017-12-02T04:20:26.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.658007" lon="139.704813"><ele>54.0</ele><time>2017-12-02T04:20:33.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.657998" lon="139.704926"><ele>59.0</ele><time>2017-12-02T04:20:44.000Z</time><cmt>gps</cmt></trkpt>
+</trkseg>
+</trk>
+</gpx>

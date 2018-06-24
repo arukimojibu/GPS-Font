@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="GPS Track Recorder" xmlns="http://www.topografix.com/GPX/1/1" xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/1 http://www.topografix.com/GPX/Private/TopoGrafix/0/1/topografix.xsd">
+<metadata>
+<name><![CDATA[Track_16]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+</metadata>
+<trk>
+<name><![CDATA[Track_16]]></name>
+<desc><![CDATA[開始位置:]]></desc>
+<type><![CDATA[]]></type>
+<trkseg>
+<trkpt lat="35.551739" lon="139.72213"><ele>39.0</ele><time>2018-02-17T06:47:03.092Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.551806" lon="139.722215"><ele>38.0</ele><time>2018-02-17T06:47:10.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.551881" lon="139.722282"><ele>34.0</ele><time>2018-02-17T06:47:17.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.55195" lon="139.722367"><ele>34.0</ele><time>2018-02-17T06:47:25.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552013" lon="139.722459"><ele>32.0</ele><time>2018-02-17T06:47:35.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552084" lon="139.722531"><ele>36.0</ele><time>2018-02-17T06:47:43.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552123" lon="139.722632"><ele>40.0</ele><time>2018-02-17T06:47:54.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552194" lon="139.722708"><ele>37.0</ele><time>2018-02-17T06:48:02.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552266" lon="139.722783"><ele>34.0</ele><time>2018-02-17T06:48:11.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.55234" lon="139.722863"><ele>33.0</ele><time>2018-02-17T06:48:21.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552408" lon="139.722941"><ele>33.0</ele><time>2018-02-17T06:48:29.000Z</time><cmt>gps</cmt></trkpt>
+<trkpt lat="35.552461" lon="139.723036"><ele>34.0</ele><time>2018-02-17T06:48:37.000Z</time><cmt>gps</cmt></trkpt>
+</trkseg>
+</trk>
+</gpx>
