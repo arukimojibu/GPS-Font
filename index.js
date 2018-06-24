@@ -42,7 +42,6 @@ async function laodGeoJSON (url) {
   console.log(geoJSON)
   geoJSON.features
     .forEach((feature, index) => {
-      console.log(feature.properties.name)
       const coordTimes = feature.properties.coordTimes
       const start = new Date(coordTimes[0])
       const end = new Date(coordTimes[coordTimes.length - 1])
