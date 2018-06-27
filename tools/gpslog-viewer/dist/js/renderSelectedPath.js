@@ -101,7 +101,6 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
       var emBox = L.latLngBounds(L.latLng(emBoxNe.y, emBoxNe.x), L.latLng(emBoxSw.y, emBoxSw.x));
       emBox = emBox.pad(0.111111111);
       window.arukimoji.emBox = emBox;
-      console.log(emBox);
 
       // emBoxRect
       L.rectangle(emBox, {

@@ -9,7 +9,6 @@
     if (selectedPath.length === 0) {
       return;
     }
-    console.log(emBox.toBBoxString());
     var sw = emBox.getSouthWest();
     var ne = emBox.getNorthEast();
     var geojson = {

@@ -4,7 +4,6 @@
     if (selectedPath.length === 0) {
       return
     }
-    console.log(emBox.toBBoxString())
     const sw = emBox.getSouthWest()
     const ne = emBox.getNorthEast()
     const geojson = {

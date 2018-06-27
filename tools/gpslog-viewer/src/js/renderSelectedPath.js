@@ -77,7 +77,6 @@
       )
       emBox = emBox.pad(0.111111111)
       window.arukimoji.emBox = emBox
-      console.log(emBox)
 
       // emBoxRect
       L.rectangle(emBox, {
