@@ -1,12 +1,15 @@
 (() => {
   const exportGeoJSON = (filename) => {
-    const { selectedPath } = window.arukimoji
+    const { selectedPath, emBox } = window.arukimoji
     if (selectedPath.length === 0) {
       return
     }
+    console.log(emBox.toBBoxString())
+    const sw = emBox.getSouthWest()
+    const ne = emBox.getNorthEast()
     const geojson = {
       type: 'Feature',
-      bbox: [],
+      bbox: [sw.lng, sw.lat, ne.lng, ne.lat],
       properties: {
         origin: []
       },

@@ -2,14 +2,19 @@
 
 (function () {
   var exportGeoJSON = function exportGeoJSON(filename) {
-    var selectedPath = window.arukimoji.selectedPath;
+    var _window$arukimoji = window.arukimoji,
+        selectedPath = _window$arukimoji.selectedPath,
+        emBox = _window$arukimoji.emBox;
 
     if (selectedPath.length === 0) {
       return;
     }
+    console.log(emBox.toBBoxString());
+    var sw = emBox.getSouthWest();
+    var ne = emBox.getNorthEast();
     var geojson = {
       type: 'Feature',
-      bbox: [],
+      bbox: [sw.lng, sw.lat, ne.lng, ne.lat],
       properties: {
         origin: []
       },

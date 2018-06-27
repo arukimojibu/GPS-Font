@@ -11,6 +11,8 @@
     selectedPath: [],
     gpsLayer: null,
     path: null,
+    emBox: null,
+    emBoxLayer: null,
     pointLayer: null,
     exportControl: null
 
@@ -70,6 +72,14 @@
   var path = L.polyline([], { color: '#000', weight: 1 }).addTo(map);
   path.interactive = false;
   window.arukimoji.path = path;
+
+  // emBox
+  var emBox = L.latLngBounds(L.latLng([0, 0]).toBounds(2));
+  window.arukimoji.emBox = emBox;
+
+  // emBoxLayer
+  var emBoxLayer = L.layerGroup().addTo(map);
+  window.arukimoji.emBoxLayer = emBoxLayer;
 
   // export control
   var ExportControl = L.Control.extend({

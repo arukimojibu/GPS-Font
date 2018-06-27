@@ -13,13 +13,16 @@
    * render selected path
    */
   const renderSelectedPath = () => {
-    const { L, arukimoji } = window
-    const { map, pointLayer, selectedPath, exportControl } = arukimoji
+    const { L, proj4, arukimoji } = window
+    const EPSG3857 = proj4('EPSG:3857')
+    const WGS84 = proj4('WGS84')
+    const { map, pointLayer, selectedPath, exportControl, emBoxLayer } = arukimoji
     const bounds = L.latLngBounds()
     const exportControlContainer = exportControl.getContainer()
 
     // clear
     pointLayer.clearLayers()
+    emBoxLayer.clearLayers()
 
     // render
     selectedPath
@@ -51,10 +54,40 @@
       })
 
     if (selectedPath.length > 0) {
-      // fit bounds
-      if (map.getZoom() < 14) {
-        map.fitBounds(bounds)
+      // emBox
+      const ne = bounds.getNorthWest()
+      const sw = bounds.getSouthEast()
+      let [ xMin, yMax ] = proj4(EPSG3857, [ne.lng, ne.lat])
+      let [ xMax, yMin ] = proj4(EPSG3857, [sw.lng, sw.lat])
+      let [ width, height ] = [ xMax - xMin, yMax - yMin ]
+      const delta = Math.abs(width - height) / 2
+      if (height > width) {
+        xMin -= delta
+        xMax += delta
+      } else {
+        yMin -= delta
+        yMax += delta
       }
+      [ width, height ] = [ xMax - xMin, yMax - yMin ]
+      const emBoxNe = proj4(EPSG3857, WGS84, {x: xMin, y: yMax})
+      const emBoxSw = proj4(EPSG3857, WGS84, {x: xMax, y: yMin})
+      let emBox = L.latLngBounds(
+        L.latLng(emBoxNe.y, emBoxNe.x),
+        L.latLng(emBoxSw.y, emBoxSw.x)
+      )
+      emBox = emBox.pad(0.111111111)
+      window.arukimoji.emBox = emBox
+      console.log(emBox)
+
+      // emBoxRect
+      L.rectangle(emBox, {
+        weight: 1
+      })
+        .addTo(emBoxLayer)
+        .bringToBack()
+
+      // fit emBox
+      map.fitBounds(emBox)
 
       // enable export control
       exportControlContainer
