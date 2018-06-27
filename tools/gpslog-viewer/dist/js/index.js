@@ -32,17 +32,17 @@
   var mapbox = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
     minZoom: 12,
     maxZoom: 20,
-    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    attribution: '<a href="https://www.mapbox.com/about/maps/">&copy; Mapbox</a> <a href="https://openstreetmap.org">&copy; OpenStreetMap</a>'
   });
   var mapboxStreet = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}?access_token=' + mapboxAccessToken, {
     minZoom: 12,
     maxZoom: 20,
-    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    attribution: '<a href="https://www.mapbox.com/about/maps/">&copy; Mapbox</a> <a href="https://openstreetmap.org">&copy; OpenStreetMap</a>'
   });
   var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 12,
     maxZoom: 20,
-    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    attribution: '<a href="https://openstreetmap.org">&copy; OpenStreetMap</a>'
   });
   var baseLayers = {
     'Light': mapbox,
