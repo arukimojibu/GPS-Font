@@ -98,6 +98,7 @@
 
           path.arukimoji.unselect();
         });
+        map.setView([35.685175, 139.7528], 13);
       };
 
       // download
