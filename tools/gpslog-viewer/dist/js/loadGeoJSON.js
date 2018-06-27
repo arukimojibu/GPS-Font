@@ -68,9 +68,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       }
 
       // enable export control
-      exportControlContainer.classList.remove('leaflet-control-export--disable');
+      exportControlContainer.classList.remove('leaflet-control-select--disable');
     } else {
-      exportControlContainer.classList.add('leaflet-control-export--disable');
+      exportControlContainer.classList.add('leaflet-control-select--disable');
     }
   };
 

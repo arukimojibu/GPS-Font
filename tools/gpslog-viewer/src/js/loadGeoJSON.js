@@ -59,11 +59,11 @@
       // enable export control
       exportControlContainer
         .classList
-        .remove('leaflet-control-export--disable')
+        .remove('leaflet-control-select--disable')
     } else {
       exportControlContainer
         .classList
-        .add('leaflet-control-export--disable')
+        .add('leaflet-control-select--disable')
     }
   }
 

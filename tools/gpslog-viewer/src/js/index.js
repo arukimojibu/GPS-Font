@@ -76,17 +76,30 @@
     onAdd: (map) => {
       const container = L.DomUtil.create(
         'div',
-        'leaflet-bar leaflet-control leaflet-control-export leaflet-control-export--disable'
+        'leaflet-bar leaflet-control leaflet-control-select leaflet-control-select--disable'
       )
-      const button = L.DomUtil.create('i', 'fa fa-file-download', container)
-      button.title = 'GeoJSON ファイルをダウンロード'
-      container.onclick = (e) => {
+
+      // unselect all
+      const unselectAllButton = L.DomUtil.create('i', 'fa fa-times', container)
+      unselectAllButton.title = '全ての選択を解除'
+      unselectAllButton.onclick = (e) => {
+        window.arukimoji.selectedPath
+          .forEach(({path}) => {
+            path.arukimoji.unselect()
+          })
+      }
+
+      // download
+      const donwloadButton = L.DomUtil.create('i', 'fa fa-file-download', container)
+      donwloadButton.title = 'GeoJSON ファイルをダウンロード'
+      donwloadButton.onclick = (e) => {
         e.stopPropagation()
         const filename = window.prompt('ファイル名を入力してください')
         if (filename) {
           window.exportGeoJSON(filename)
         }
       }
+
       return container
     }
   })
